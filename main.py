@@ -55,9 +55,8 @@ async def main():
 
     await asyncio.gather(*tasks)
 
-    json.dump(result, open('words.json', 'w', encoding='utf-8'), ensure_ascii=False)
-
 
 if __name__ == '__main__':
     result = []
     asyncio.run(main())
+    json.dump(result, open('words.json', 'w', encoding='utf-8'), ensure_ascii=False)

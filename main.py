@@ -12,9 +12,6 @@ def get_url(word: str) -> str:
 
 
 async def get_word_data(response: aiohttp.ClientResponse) -> dict:
-    """
-    Function to get word data
-    """
     output = {
         "en": {},
         "ru": {}
